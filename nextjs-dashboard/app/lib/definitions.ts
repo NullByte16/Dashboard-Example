@@ -86,3 +86,14 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+
+export type Analyst = {
+  id: number;
+  name: string;
+  color: string;
+}
+
+export type Constraint = {
+  day: string;
+  shift: string;
+}

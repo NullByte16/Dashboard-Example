@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.js",
     "scripts/seed.js"
-  ],
+, "app/dashboard/shifts/table/page.jsx", "app/ui/shifts/ShiftsTable.tsx", "app/lib/shiftData/columns.tsx"  ],
   "exclude": ["node_modules"]
 }

@@ -3,21 +3,27 @@ import {
   UserGroupIcon,
   HomeIcon,
   DocumentDuplicateIcon,
+  CalendarDaysIcon,
+  TableCellsIcon
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
+import ConstraintsIcon from './ConstraintsIcon';
+import AddShiftsIcon from './AddShiftsIcon';
 
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
   { name: 'Home', href: '/dashboard', icon: HomeIcon },
   {
-    name: 'Invoices',
-    href: '/dashboard/invoices',
-    icon: DocumentDuplicateIcon,
+    name: 'Shifts',
+    href: '/dashboard/shifts',
+    icon: TableCellsIcon,
   },
-  { name: 'Customers', href: '/dashboard/customers', icon: UserGroupIcon },
+  { name: 'Create Shifts Table', href: '/dashboard/createshifts', icon: AddShiftsIcon },
+  { name: 'Weekly Constraints', href: '/dashboard/weeklyconstraints', icon: ConstraintsIcon },
+  { name: 'Analysts', href: '/dashboard/analysts', icon: UserGroupIcon}
 ];
 
 export default function NavLinks() {
